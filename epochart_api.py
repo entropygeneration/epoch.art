@@ -2,6 +2,8 @@ import requests
 import json
 import datetime
 
+base_url = 'https://api.epoch.art'
+
 # get price of ADA
 def get_quote(base_url, currency):
 	url = f'{base_url}/quotes/{currency}' # currency = 'ADA'
@@ -82,5 +84,3 @@ def get_sales(status, policy_id, date):
 	else:
 		print(r.status_code)
 		print(r.text)
-
-base_url = 'https://api.epoch.art'

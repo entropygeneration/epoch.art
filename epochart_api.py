@@ -2,7 +2,7 @@ import requests
 import json
 import datetime
 
-# cet price of ADA
+# get price of ADA
 def get_quote(base_url, currency):
 	url = f'{base_url}/quotes/{currency}' # currency = 'ADA'
 	r = requests.get(url)
